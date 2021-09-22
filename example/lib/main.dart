@@ -104,7 +104,7 @@ class ExampleHome extends StatelessWidget {
 
 class _CustomProgress extends StatefulWidget {
   const _CustomProgress({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -113,7 +113,7 @@ class _CustomProgress extends StatefulWidget {
 
 class __CustomProgressState extends State<_CustomProgress>
     with SingleTickerProviderStateMixin {
-  AnimationController controller;
+  late AnimationController controller;
   @override
   void initState() {
     super.initState();
